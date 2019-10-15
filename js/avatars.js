@@ -9,7 +9,7 @@ var app = new Vue({
   },
   mounted() {
     axios
-      .get("/docs/raccoons.json")
+      .get("./docs/raccoons.json")
       .then(response => (this.people = response.data));
   },
   computed: {
