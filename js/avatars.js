@@ -1,18 +1,24 @@
 var app = new Vue({
-  el: "#app",
+  el: '#app',
   data: {
-    title: "Еноты",
+    // title: 'Еноты',
     current: 0,
     show: false,
-    people: [],
-    info: ""
+    groups: [{ name: '', title: 'Еноты', people: [] }],
+    currentGroup: 0
   },
   mounted() {
     axios
-      .get("./docs/raccoons.json")
-      .then(response => (this.people = response.data));
+      .get('./docs/group.json')
+      .then(response => (this.groups = response.data.groups));
   },
   computed: {
+    people() {
+      return this.groups[this.currentGroup].people;
+    },
+    title() {
+      return this.groups[this.currentGroup].title;
+    },
     showPeople() {
       return this.people.slice(this.current, this.current + 3);
     }
@@ -22,6 +28,9 @@ var app = new Vue({
       this.show = false;
       if (this.current > this.people.length - 4) this.current = 0;
       else this.current++;
+    },
+    changeGroup(index) {
+      this.currentGroup = index;
     }
   }
 });
