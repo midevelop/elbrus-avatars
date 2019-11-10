@@ -23,7 +23,7 @@
   <body>
     <div class="container" id="app">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Карточки: Еноты</a>
+        <a class="navbar-brand" href="#">Карточки: {{ title }}</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -47,19 +47,29 @@
           </ul>
         </div>
       </nav>
-
       <hr />
+      <div class="py-2 text-center">
+        <template v-for="group, index in groups">
+          <button
+            @click="changeGroup(index)"
+            class="btn mr-1"
+            :class="index === currentGroup? 'btn-secondary':'btn-outline-secondary'"
+          >
+            {{ group.title }}
+          </button>
+        </template>
+      </div>
 
       <div class="card-deck row">
         <template v-for="person in showPeople">
           <div class="card text-center col-sm-4" :key="person.fio">
             <div class="card-header" @click="show = !show">
-              <div class="card-text">{{ show ? person.fio : "???" }}</div>
+              <div class="card-text">{{ show ? person.fio : '???' }}</div>
             </div>
             <img
               class="card-img"
               :src="person.src"
-              alt="Card image"
+              alt="Фото не найдено. Кликай на надпись"
               @click="nextAvatar"
             />
           </div>
