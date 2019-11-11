@@ -23,7 +23,7 @@
   <body>
     <div class="container" id="app">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Карточки: {{ title }}</a>
+        <a class="navbar-brand" href="#">Elbrus Team: {{ title }}</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -47,6 +47,16 @@
           </ul>
         </div>
       </nav>
+      <div>
+        <ol class="small">
+          <strong>Инструкция</strong>
+          <li>Выберить группу из предложенных</li>
+          <li>Нажмите на фотографию чтобы пролистать дальше</li>
+          <li>
+            Для просмотра имени нажмите на <code>_______ _______ _______</code>
+          </li>
+        </ol>
+      </div>
       <hr />
       <div class="py-2 text-center">
         <template v-for="group, index in groups">
@@ -54,6 +64,7 @@
             @click="changeGroup(index)"
             class="btn mr-1"
             :class="index === currentGroup? 'btn-secondary':'btn-outline-secondary'"
+            title=""
           >
             {{ group.title }}
           </button>
@@ -63,14 +74,22 @@
       <div class="card-deck row">
         <template v-for="person in showPeople">
           <div class="card text-center col-sm-4" :key="person.fio">
-            <div class="card-header" @click="show = !show">
-              <div class="card-text">{{ show ? person.fio : '???' }}</div>
+            <div
+              class="card-header"
+              @click="show = !show"
+              title="Нажми, чтобыПоказать / Скрыть имя"
+            >
+              <div class="card-text" style="cursor: pointer;">
+                <i>{{ show ? person.fio : '_______ _______ _______' }} </i>
+              </div>
             </div>
             <img
               class="card-img bg-warning"
               :src="person.src"
               alt="Фото не найдено. Кликай на надпись"
               @click="nextAvatar"
+              title="Нажми и листай дальше"
+              style="cursor: pointer;"
             />
           </div>
         </template>
