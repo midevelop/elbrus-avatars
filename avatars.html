@@ -59,6 +59,7 @@
       </div>
       <hr />
       <div class="py-2 text-center">
+        <span>{{current+1}}-{{current+3}} из {{people.length}} </span>
         <template v-for="group, index in groups">
           <button
             @click="changeGroup(index)"
