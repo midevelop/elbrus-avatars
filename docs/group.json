@@ -1,13 +1,79 @@
 {
   "groups": [
     {
-      "name": "foxes-2020",
-      "title": "Лисы",
+      "name": "eagles-2020",
+      "title": "Орлы",
       "people": [
         {
           "fio": "Адгем Абдрахманов Adgem19",
           "src": "https://avatars3.githubusercontent.com/u/58823819?v=4"
         },
+        {
+          "fio": "Artem Shilov ArtShilov",
+          "src": "https://avatars0.githubusercontent.com/u/60030394?v=4"
+        },
+        {
+          "fio": "Alexandra Pryakhina eissa2310",
+          "src": "https://avatars3.githubusercontent.com/u/58979688?v=4"
+        },
+        {
+          "fio": "Eldar Sufiyanov Ellpm",
+          "src": "https://avatars1.githubusercontent.com/u/54028924?v=4"
+        },
+        {
+          "fio": "Maxim Gabrielov8",
+          "src": "https://avatars3.githubusercontent.com/u/56017718?v=4"
+        },
+        {
+          "fio": "Aleksandra Baryshnikova lexie0428",
+          "src": "https://avatars0.githubusercontent.com/u/57855284?v=4"
+        },
+        {
+          "fio": "Евгений Malevich930",
+          "src": "https://avatars3.githubusercontent.com/u/60045802?v=4"
+        },
+        {
+          "fio": "Михаил Пудов Michail-Pudov",
+          "src": "https://avatars2.githubusercontent.com/u/58823909?v=4"
+        },
+        {
+          "fio": "Imogen negomi-e",
+          "src": "https://avatars1.githubusercontent.com/u/60066005?v=4"
+        },
+        {
+          "fio": "Николай Норбоев NikolaiNorboev",
+          "src": "https://avatars0.githubusercontent.com/u/58690648?v=4"
+        },
+        {
+          "fio": "Olesya OlesyaAnaneva",
+          "src": "https://avatars1.githubusercontent.com/u/60062040?v=4"
+        },
+        {
+          "fio": "Dmitry Pak pakdmitry88",
+          "src": "https://avatars0.githubusercontent.com/u/60062490?v=4"
+        },
+        {
+          "fio": "Konstantin Samolevich samolevich",
+          "src": "https://avatars2.githubusercontent.com/u/42073618?v=4"
+        },
+        {
+          "fio": "Tigran Buniatyan Tigran134",
+          "src": "https://avatars2.githubusercontent.com/u/60030477?v=4"
+        },
+        {
+          "fio": "Vadim Krivoshein VSKrivoshein",
+          "src": "https://avatars1.githubusercontent.com/u/25327118?v=4"
+        },
+        {
+          "fio": "Ivan Kursakov XaVi7777",
+          "src": "https://avatars0.githubusercontent.com/u/60063163?v=4"
+        }
+      ]
+    },
+    {
+      "name": "foxes-2020",
+      "title": "Лисы",
+      "people": [
         {
           "fio": "Адиль Баймагамбетов Adil320",
           "src": "https://avatars2.githubusercontent.com/u/54187988?v=4"
