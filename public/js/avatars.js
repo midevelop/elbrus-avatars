@@ -1,16 +1,18 @@
 var app = new Vue({
-  el: '#app',
+  el: "#app",
   data: {
     // title: 'Еноты',
     current: 0,
     show: false,
-    groups: [{ name: '', title: 'Еноты', people: [] }],
+    groups: [{ name: "", title: "Еноты", people: [] }],
     currentGroup: 0
   },
-  mounted() {
-    axios
-      .get('./docs/group.json')
-      .then(response => (this.groups = response.data.groups));
+  async mounted() {
+    let responce = await axios.get("/groups");
+    console.log(responce)
+    let data = await responce.data;
+
+    this.groups = data.groups
   },
   computed: {
     people() {
