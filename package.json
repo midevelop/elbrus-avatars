@@ -1,0 +1,31 @@
+{
+  "name": "elbrus-avatars",
+  "version": "1.0.0",
+  "description": "Карточки для знакомства с командой",
+  "main": "app.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "dev": "npx nodemon dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/midevelop/elbrus-avatars.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/midevelop/elbrus-avatars/issues"
+  },
+  "homepage": "https://github.com/midevelop/elbrus-avatars#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.5.2",
+    "mongoose": "^5.8.11",
+    "morgan": "^1.9.1"
+  }
+}
